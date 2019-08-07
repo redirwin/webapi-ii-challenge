@@ -15,9 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="page-wrapper">
         {posts.map(post => (
-          <div key={post.id}>
+          <div key={post.id} className="post-wrapper">
             <h3>{post.title}</h3>
             <p>{post.contents}</p>
             <Comments id={post.id} />
